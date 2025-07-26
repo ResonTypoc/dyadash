@@ -83,13 +83,14 @@
             toggle-mode = "off";
         };
 
-        cpi_low: cpi_low_behavior {  
-            compatible = "zmk,behavior-hold-tap";  
-            #binding-cells = <2>;  
-            flavor = "hold-preferred";  
-            tapping-term-ms = <200>;  
-            bindings = <&set_cpi_low>, <&kp>;  
-            display-name = "CPI Low";  
+        cpi_low: cpi_low_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&set_cpi_low>, <&kp>;
+
+            display-name = "CPI Low";
         };
     };
 
@@ -291,12 +292,12 @@
         scroll_layer {
             display-name = "Trackball Scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP       &kp END    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp UP     &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans
-&trans  &trans                                  &trans    &trans     &trans          &trans
-&trans  &trans  &trans  &trans                  &trans    &trans     &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN       &kp PG_UP     &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans     &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans
+&trans  &trans                                  &trans    &trans          &trans        &trans
+&trans  &trans  &trans  &trans                  &trans    &trans          &trans        &trans
             >;
         };
 
