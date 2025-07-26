@@ -82,16 +82,6 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
-
-        cpi_low: cpi_low_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&set_cpi_low>, <&kp>;
-
-            display-name = "CPI Low";
-        };
     };
 
     macros {
