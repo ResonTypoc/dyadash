@@ -282,12 +282,12 @@
         scroll_layer {
             display-name = "Trackball Scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp UP     &kp RIGHT  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans
-&trans  &trans                                  &trans    &trans     &trans     &trans
-&trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN  &kp PG_UP       &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp UP     &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans     &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans
+&trans  &trans                                  &trans    &trans     &trans          &trans
+&trans  &trans  &trans  &trans                  &trans    &trans     &trans          &trans
             >;
         };
 
