@@ -30,8 +30,8 @@ jobs:
         run: |
           git config --global --add safe.directory ${{ github.workspace }}
           make init
-      - name: Build
-        run: make build-all -j6
+      - name: Build specific targets
+        run: make build-left build-right-ball -j6
       - name: Copy artifacts
         shell: sh -x {0}
         run: |
